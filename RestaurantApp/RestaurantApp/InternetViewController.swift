@@ -20,7 +20,7 @@ class InternetViewController: UIViewController, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
-        webView.backgroundColor = .systemBlue
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()

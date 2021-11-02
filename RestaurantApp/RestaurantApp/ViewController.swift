@@ -5,22 +5,21 @@
 //  Created by Limei  Chen on 11/2/21.
 //
 
+
+// var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
 import UIKit
 
 class ViewController: UIViewController {
     var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-    
-    var viewModel = RestaurantViewModel()
-//    var network = Network()
-//    var restaruants: [Restaurants] = []
-    
 
+    var viewModel = RestaurantViewModel()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
-        setupCollectionView()
         setupVM()
-        
+        setupCollectionView()
+        view.backgroundColor = .systemYellow
     }
     
     func setupCollectionView() {
@@ -28,8 +27,8 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         let nib = UINib(nibName: CollectionViewCell.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: CollectionViewCell.identifier)
-       
     }
+
     func setupVM() {
         viewModel.bind {
             self.collectionView.reloadData()
@@ -40,20 +39,21 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("this is number of row", viewModel.numRows)
+        print("this is the count", viewModel.numRows)
         return viewModel.numRows
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as! CollectionViewCell
-        cell.backgroundColor = .systemBlue
-        cell.configure(model: viewModel.getModel(row: indexPath.row))
-        return cell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as? CollectionViewCell else {
+            return UICollectionViewCell()
         }
         
+        cell.configure(model: viewModel.getModel(row: indexPath.row))
+        
+        return cell
     }
     
-
+}
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -69,5 +69,3 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
 }
-
-
