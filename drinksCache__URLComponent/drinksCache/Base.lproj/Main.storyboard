@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drinksCache" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOP-XU-QHd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-Lr-aEH">
+                                <rect key="frame" x="0.0" y="295.5" width="414" height="566.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-Ml-dzg">
+                                <rect key="frame" x="0.0" y="216" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lls-bI-aIq">
+                                <rect key="frame" x="172.5" y="267" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOM-sP-nnH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bOP-XU-QHd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="35T-4D-za8"/>
+                            <constraint firstItem="RDe-Ml-dzg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7z3-CX-l2k"/>
+                            <constraint firstItem="lls-bI-aIq" firstAttribute="top" secondItem="RDe-Ml-dzg" secondAttribute="bottom" id="Fax-bq-Ibx"/>
+                            <constraint firstItem="lls-bI-aIq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GQV-y8-Dww"/>
+                            <constraint firstItem="OW6-Lr-aEH" firstAttribute="firstBaseline" secondItem="lls-bI-aIq" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="Keq-x8-KV4"/>
+                            <constraint firstItem="bOP-XU-QHd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PS1-Jn-nfe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OW6-Lr-aEH" secondAttribute="bottom" id="Qu9-uc-LRD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOP-XU-QHd" secondAttribute="trailing" id="awk-0Q-MUY"/>
+                            <constraint firstItem="OW6-Lr-aEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cCE-ua-bMz"/>
+                            <constraint firstItem="RDe-Ml-dzg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="heP-MI-Wgb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OW6-Lr-aEH" secondAttribute="trailing" id="mKo-TH-TQj"/>
+                            <constraint firstItem="RDe-Ml-dzg" firstAttribute="top" secondItem="bOP-XU-QHd" secondAttribute="bottom" id="zeH-oI-o48"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="bOP-XU-QHd" id="qkG-0A-qLz"/>
+                        <outlet property="searchBar" destination="RDe-Ml-dzg" id="7wZ-8W-YW6"/>
+                        <outlet property="tableView" destination="OW6-Lr-aEH" id="Bzx-Js-jCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

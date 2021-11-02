@@ -12,6 +12,7 @@ class Coordinator {
     
     init(_ rootController: UIViewController) {
         self.navigationController = UINavigationController(rootViewController: rootController)
+        
     }
 }
 

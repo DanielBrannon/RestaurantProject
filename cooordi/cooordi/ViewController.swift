@@ -17,7 +17,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Movie Search"
+        view.backgroundColor = .systemMint
+        
     }
     func create () -> ViewController {
         let controller = UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController() as! ViewController

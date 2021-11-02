@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfH-IA-G17">
-                                <rect key="frame" x="180" y="244" width="54" height="31"/>
+                                <rect key="frame" x="180" y="244" width="54" height="408"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -30,6 +30,8 @@
                         <constraints>
                             <constraint firstItem="bfH-IA-G17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bl-Uv-5p0"/>
                             <constraint firstItem="bfH-IA-G17" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="R32-sR-fDV"/>
+                            <constraint firstItem="bfH-IA-G17" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WfH-JI-ys3"/>
+                            <constraint firstItem="bfH-IA-G17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pns-cd-O8A"/>
                         </constraints>
                     </view>
                 </viewController>
