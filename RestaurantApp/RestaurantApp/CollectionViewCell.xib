@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="401" height="211"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsI-eZ-9tM">
-                        <rect key="frame" x="20" y="110" width="322" height="20.5"/>
+                        <rect key="frame" x="20" y="110" width="331" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVf-hr-wyW">
-                        <rect key="frame" x="20" y="150.5" width="322" height="20.5"/>
+                        <rect key="frame" x="20" y="150.5" width="331" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,12 +32,13 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="HVf-hr-wyW" secondAttribute="trailing" constant="59" id="6eN-qp-8hy"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="HVf-hr-wyW" secondAttribute="trailing" constant="50" id="6eN-qp-8hy"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="HVf-hr-wyW" secondAttribute="bottom" constant="40" id="9vk-Kd-CmB"/>
                 <constraint firstItem="YsI-eZ-9tM" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="BTl-cP-kek"/>
                 <constraint firstItem="YsI-eZ-9tM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="110" id="Qzd-S0-z6o"/>
                 <constraint firstItem="HVf-hr-wyW" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="ZAR-4m-Anm"/>
                 <constraint firstItem="HVf-hr-wyW" firstAttribute="top" secondItem="YsI-eZ-9tM" secondAttribute="bottom" constant="20" id="efq-iT-Tau"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="YsI-eZ-9tM" secondAttribute="trailing" constant="59" id="upz-Fc-OV8"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="YsI-eZ-9tM" secondAttribute="trailing" constant="50" id="upz-Fc-OV8"/>
             </constraints>
             <size key="customSize" width="401" height="211"/>
             <connections>

@@ -23,6 +23,7 @@ class RestaurantViewModel {
     init() {
         network.fetchRestaurants { restaurants in
             self.restaurants = restaurants
+            //print("data fetched inside view model", restaurants)
         }
     }
     

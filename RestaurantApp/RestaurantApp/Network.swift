@@ -17,7 +17,7 @@ struct Network {
                 do {
                     let decoded = try JSONDecoder().decode(RestaurantModel.self, from: data)
                     completion(decoded)
-                    print("this is decoded data", decoded)
+                    //print("this is decoded data", decoded)
                 } catch {
                     print("error")
                 }
