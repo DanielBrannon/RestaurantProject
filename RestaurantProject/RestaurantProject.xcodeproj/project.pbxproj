@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		EF753FED2731B1E50063FE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FEC2731B1E50063FE3E /* AppDelegate.swift */; };
 		EF753FEF2731B1E50063FE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FEE2731B1E50063FE3E /* SceneDelegate.swift */; };
-		EF753FF12731B1E50063FE3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FF02731B1E50063FE3E /* ViewController.swift */; };
+		EF753FF12731B1E50063FE3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FF02731B1E50063FE3E /* MainViewController.swift */; };
 		EF753FF42731B1E50063FE3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF753FF22731B1E50063FE3E /* Main.storyboard */; };
 		EF753FF62731B1E60063FE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF753FF52731B1E60063FE3E /* Assets.xcassets */; };
 		EF753FF92731B1E60063FE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF753FF72731B1E60063FE3E /* LaunchScreen.storyboard */; };
 		EF7540082731BB9D0063FE3E /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540072731BB9D0063FE3E /* RestaurantModel.swift */; };
+		EF75400A2731C0940063FE3E /* NetworkingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540092731C0940063FE3E /* NetworkingRequest.swift */; };
+		EF75400C2731C0CF0063FE3E /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75400B2731C0CF0063FE3E /* InternetViewController.swift */; };
+		EF75400E2731C1880063FE3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75400D2731C1880063FE3E /* MapViewController.swift */; };
+		EF7540102731C1BA0063FE3E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75400F2731C1BA0063FE3E /* MainViewModel.swift */; };
+		EF7540122731C2230063FE3E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540112731C2230063FE3E /* Coordinator.swift */; };
+		EF7540142731C2340063FE3E /* InternetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540132731C2340063FE3E /* InternetViewModel.swift */; };
+		EF7540162731C23A0063FE3E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540152731C23A0063FE3E /* MapViewModel.swift */; };
+		EF75401C2731C3210063FE3E /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75401A2731C3210063FE3E /* myCell.swift */; };
+		EF75401D2731C3210063FE3E /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75401B2731C3210063FE3E /* myCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF753FE92731B1E50063FE3E /* RestaurantProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF753FEC2731B1E50063FE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF753FEE2731B1E50063FE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF753FF02731B1E50063FE3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF753FF02731B1E50063FE3E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF753FF32731B1E50063FE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF753FF52731B1E60063FE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF753FF82731B1E60063FE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF753FFA2731B1E60063FE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7540072731BB9D0063FE3E /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		EF7540092731C0940063FE3E /* NetworkingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingRequest.swift; sourceTree = "<group>"; };
+		EF75400B2731C0CF0063FE3E /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		EF75400D2731C1880063FE3E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EF75400F2731C1BA0063FE3E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EF7540112731C2230063FE3E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EF7540132731C2340063FE3E /* InternetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewModel.swift; sourceTree = "<group>"; };
+		EF7540152731C23A0063FE3E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		EF75401A2731C3210063FE3E /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		EF75401B2731C3210063FE3E /* myCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +82,6 @@
 				EF7540022731BB3F0063FE3E /* Coordinator */,
 				EF7540012731BB1E0063FE3E /* App Files */,
 				EF7540002731BB040063FE3E /* Networking Request */,
-				EF753FF02731B1E50063FE3E /* ViewController.swift */,
 				EF753FF22731B1E50063FE3E /* Main.storyboard */,
 				EF753FF52731B1E60063FE3E /* Assets.xcassets */,
 				EF753FF72731B1E60063FE3E /* LaunchScreen.storyboard */,
@@ -76,6 +93,7 @@
 		EF7540002731BB040063FE3E /* Networking Request */ = {
 			isa = PBXGroup;
 			children = (
+				EF7540092731C0940063FE3E /* NetworkingRequest.swift */,
 			);
 			path = "Networking Request";
 			sourceTree = "<group>";
@@ -92,6 +110,7 @@
 		EF7540022731BB3F0063FE3E /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				EF7540112731C2230063FE3E /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -99,6 +118,9 @@
 		EF7540032731BB5B0063FE3E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EF75400F2731C1BA0063FE3E /* MainViewModel.swift */,
+				EF7540132731C2340063FE3E /* InternetViewModel.swift */,
+				EF7540152731C23A0063FE3E /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,6 +128,10 @@
 		EF7540042731BB630063FE3E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF753FF02731B1E50063FE3E /* MainViewController.swift */,
+				EF7540172731C2F30063FE3E /* MainCollectionViewCell */,
+				EF75400B2731C0CF0063FE3E /* InternetViewController.swift */,
+				EF75400D2731C1880063FE3E /* MapViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +142,15 @@
 				EF7540072731BB9D0063FE3E /* RestaurantModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7540172731C2F30063FE3E /* MainCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF75401A2731C3210063FE3E /* myCell.swift */,
+				EF75401B2731C3210063FE3E /* myCell.xib */,
+			);
+			path = MainCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF753FF92731B1E60063FE3E /* LaunchScreen.storyboard in Resources */,
+				EF75401D2731C3210063FE3E /* myCell.xib in Resources */,
 				EF753FF62731B1E60063FE3E /* Assets.xcassets in Resources */,
 				EF753FF42731B1E50063FE3E /* Main.storyboard in Resources */,
 			);
@@ -189,10 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF753FF12731B1E50063FE3E /* ViewController.swift in Sources */,
+				EF753FF12731B1E50063FE3E /* MainViewController.swift in Sources */,
+				EF75401C2731C3210063FE3E /* myCell.swift in Sources */,
 				EF753FED2731B1E50063FE3E /* AppDelegate.swift in Sources */,
+				EF75400A2731C0940063FE3E /* NetworkingRequest.swift in Sources */,
+				EF75400C2731C0CF0063FE3E /* InternetViewController.swift in Sources */,
 				EF753FEF2731B1E50063FE3E /* SceneDelegate.swift in Sources */,
+				EF7540142731C2340063FE3E /* InternetViewModel.swift in Sources */,
+				EF7540162731C23A0063FE3E /* MapViewModel.swift in Sources */,
 				EF7540082731BB9D0063FE3E /* RestaurantModel.swift in Sources */,
+				EF75400E2731C1880063FE3E /* MapViewController.swift in Sources */,
+				EF7540102731C1BA0063FE3E /* MainViewModel.swift in Sources */,
+				EF7540122731C2230063FE3E /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
