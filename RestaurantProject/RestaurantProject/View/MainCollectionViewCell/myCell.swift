@@ -17,4 +17,12 @@ class myCell: UICollectionViewCell {
         // Initialization code
     }
     
+    var onReuse: () -> Void = {}
+
+             override func prepareForReuse() {
+                 super.prepareForReuse()
+                 onReuse()
+                 imageView.image = nil
+             }
+    
 }

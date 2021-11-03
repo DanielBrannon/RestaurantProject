@@ -35,4 +35,6 @@ class MainViewModel {
         func getModel(row: Int) -> Restaurants? {
             restaurants?.restaurants[row]
         }
+    
+        
 }

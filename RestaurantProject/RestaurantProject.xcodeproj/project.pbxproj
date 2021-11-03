@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501A695A2732FB3600E1172F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501A69592732FB3600E1172F /* ImageCache.swift */; };
 		EF753FED2731B1E50063FE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FEC2731B1E50063FE3E /* AppDelegate.swift */; };
 		EF753FEF2731B1E50063FE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FEE2731B1E50063FE3E /* SceneDelegate.swift */; };
 		EF753FF12731B1E50063FE3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FF02731B1E50063FE3E /* MainViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		501A69592732FB3600E1172F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		EF753FE92731B1E50063FE3E /* RestaurantProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF753FEC2731B1E50063FE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF753FEE2731B1E50063FE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501A69582732FB2000E1172F /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				501A69592732FB3600E1172F /* ImageCache.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
 		EF753FE02731B1E50063FE3E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		EF753FEB2731B1E50063FE3E /* RestaurantProject */ = {
 			isa = PBXGroup;
 			children = (
+				501A69582732FB2000E1172F /* ImageCache */,
 				EF75401E2732DF880063FE3E /* Storyboards */,
 				EF7540052731BB6C0063FE3E /* Model */,
 				EF7540042731BB630063FE3E /* View */,
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF753FF12731B1E50063FE3E /* MainViewController.swift in Sources */,
+				501A695A2732FB3600E1172F /* ImageCache.swift in Sources */,
 				EF75401C2731C3210063FE3E /* myCell.swift in Sources */,
 				EF753FED2731B1E50063FE3E /* AppDelegate.swift in Sources */,
 				EF75400A2731C0940063FE3E /* NetworkingRequest.swift in Sources */,

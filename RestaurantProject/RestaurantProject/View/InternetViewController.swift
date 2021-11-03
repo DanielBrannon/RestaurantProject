@@ -15,9 +15,11 @@ class InternetViewController: UIViewController, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         let myURL = URL(string:"https://www.bottlerocketstudios.com")
         let myRequest = URLRequest(url: myURL!)
