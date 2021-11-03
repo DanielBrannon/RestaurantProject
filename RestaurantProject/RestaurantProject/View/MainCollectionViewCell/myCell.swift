@@ -16,5 +16,13 @@ class myCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
+
+        var onReuse: () -> Void = {}
+        
+        override func prepareForReuse() {
+            super.prepareForReuse()
+            /// Removes previous (outdated) running tasks
+            onReuse()
+            imageView.image = nil
+        }
 }

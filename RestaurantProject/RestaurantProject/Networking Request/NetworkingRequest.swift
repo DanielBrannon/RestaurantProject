@@ -20,7 +20,6 @@ struct NetworkingRequest:Decodable {
                 do {
                     let decoded = try JSONDecoder().decode(RestaurantModel.self, from: data)
                     completion(decoded)
-                    print(decoded)
                 } catch {
                     print(error)
                 }
