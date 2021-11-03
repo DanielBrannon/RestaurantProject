@@ -9,7 +9,6 @@ import UIKit
 
 class Coordinator {
     var navCon = UINavigationController()
-    
     func pushRestaurantVC() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         if let restaurantVC = sb.instantiateViewController(identifier: "MainViewController") as? MainViewController {
