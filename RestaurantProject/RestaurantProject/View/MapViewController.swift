@@ -12,9 +12,14 @@ import MapKit
 class MapVC: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet weak var restaurantType: UILabel!
+    @IBOutlet weak var streetName: UILabel!
+    @IBOutlet weak var address2: UILabel!
+    @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var socialMedia: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 }
