@@ -7,8 +7,11 @@
 
 import Foundation
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
+class MapVC: UIViewController {
+    
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGreen

@@ -25,6 +25,7 @@
 		EF75401C2731C3210063FE3E /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75401A2731C3210063FE3E /* myCell.swift */; };
 		EF75401D2731C3210063FE3E /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75401B2731C3210063FE3E /* myCell.xib */; };
 		EF7540202732DF940063FE3E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75401F2732DF940063FE3E /* Map.storyboard */; };
+		EF7540232732FCAD0063FE3E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540222732FCAD0063FE3E /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		EF75401A2731C3210063FE3E /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		EF75401B2731C3210063FE3E /* myCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
 		EF75401F2732DF940063FE3E /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		EF7540222732FCAD0063FE3E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,14 @@
 				EF75401F2732DF940063FE3E /* Map.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF7540212732FCA20063FE3E /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				EF7540222732FCAD0063FE3E /* ImageCache.swift */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,8 +14,18 @@ class myCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .orange
         // Initialization code
     }
+
+        var onReuse: () -> Void = {}
+        
+        override func prepareForReuse() {
+            super.prepareForReuse()
+            /// Removes previous (outdated) running tasks
+            //onReuse()
+            //imageView.image = nil
+        }
     
     var onReuse: () -> Void = {}
 

@@ -37,8 +37,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F1K-6d-jGo" secondAttribute="bottom" id="mL1-Xg-Ydm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CMG-0t-Y1l"/>
-                    <connections>
+                    <navigationItem key="navigationItem" id="gDk-R2-PkK"/>
+                <connections>
                         <outlet property="collectionView" destination="F1K-6d-jGo" id="3YE-eM-Rey"/>
                     </connections>
                 </viewController>
@@ -57,6 +57,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+
                         <segue destination="Dz9-y9-6eQ" kind="relationship" relationship="viewControllers" id="pq3-Uw-ElU"/>
                         <segue destination="RWX-CS-PNU" kind="relationship" relationship="viewControllers" id="aBX-a0-awP"/>
                     </connections>
@@ -112,23 +113,24 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Internet" id="xzE-tf-AL0"/>
+
                     <connections>
                         <outlet property="backButton" destination="KWj-fF-3cH" id="9X2-Tj-1jj"/>
                         <outlet property="nextButton" destination="HEa-F3-bC3" id="17n-Hv-xFJ"/>
                         <outlet property="webView" destination="Msx-XA-P0e" id="u1e-c9-h5c"/>
-                    </connections>
+                    </connections
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxe-Ic-RPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="19" y="871"/>
         </scene>
         <!--Lunch-->
-        <scene sceneID="bP0-Oe-1by">
+        <scene sceneID="yVk-Iq-1DF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dz9-y9-6eQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jWK-R2-989" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Lunch" id="xEs-gc-pvi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="diT-al-hoa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LE7-Y1-gcd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -138,6 +140,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9b-T3-t4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="84.375"/>
         </scene>
