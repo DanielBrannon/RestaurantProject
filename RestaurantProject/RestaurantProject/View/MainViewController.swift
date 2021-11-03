@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         NetworkingRequest().fetch() { response in
             DispatchQueue.main.async {
                 self.myData = response.restaurants
-                self.collectionView.reloadData()
+                self.collectionView.reloadData() 
                 self.title = "Lunch Tyme"
                 setupCollectionView()
             }
@@ -32,16 +32,18 @@ class MainViewController: UIViewController {
         func setupCollectionView() {
             collectionView.delegate = self
             collectionView.dataSource = self
-//            collectionView.delegateFlowLayout = self
             let nib = UINib(nibName: "myCell", bundle: nil)
             self.collectionView.register(nib, forCellWithReuseIdentifier: "myCell")
     }
+        
 }
+    
 }
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-            delegate?.goToMapVC()
+    let navController = UINavigationController()
+        let vc = UIStoryboard(name:"MapVC", bundle: nil).instantiateViewController(withIdentifier: "MapViewController")  as! MapViewController
+        navController.pushViewController(vc, animated: true)
         }
 
 
@@ -78,7 +80,6 @@ extension MainViewController: UICollectionViewDataSource {
 
                     }
                 }
-
         return cell
     }
 }
