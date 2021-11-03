@@ -14,7 +14,7 @@ class MapVC: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
+        // Do any additional setup after loading the view.
     }
 
 }

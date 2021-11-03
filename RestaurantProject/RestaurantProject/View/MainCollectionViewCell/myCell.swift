@@ -27,12 +27,4 @@ class myCell: UICollectionViewCell {
             //imageView.image = nil
         }
     
-    var onReuse: () -> Void = {}
-
-             override func prepareForReuse() {
-                 super.prepareForReuse()
-                 onReuse()
-                 imageView.image = nil
-             }
-    
 }
