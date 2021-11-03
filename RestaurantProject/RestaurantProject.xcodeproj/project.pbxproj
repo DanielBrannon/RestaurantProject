@@ -23,6 +23,7 @@
 		EF7540162731C23A0063FE3E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7540152731C23A0063FE3E /* MapViewModel.swift */; };
 		EF75401C2731C3210063FE3E /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF75401A2731C3210063FE3E /* myCell.swift */; };
 		EF75401D2731C3210063FE3E /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75401B2731C3210063FE3E /* myCell.xib */; };
+		EF7540202732DF940063FE3E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF75401F2732DF940063FE3E /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EF7540152731C23A0063FE3E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		EF75401A2731C3210063FE3E /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		EF75401B2731C3210063FE3E /* myCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
+		EF75401F2732DF940063FE3E /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +78,13 @@
 		EF753FEB2731B1E50063FE3E /* RestaurantProject */ = {
 			isa = PBXGroup;
 			children = (
+				EF75401E2732DF880063FE3E /* Storyboards */,
 				EF7540052731BB6C0063FE3E /* Model */,
 				EF7540042731BB630063FE3E /* View */,
 				EF7540032731BB5B0063FE3E /* ViewModel */,
 				EF7540022731BB3F0063FE3E /* Coordinator */,
 				EF7540012731BB1E0063FE3E /* App Files */,
 				EF7540002731BB040063FE3E /* Networking Request */,
-				EF753FF22731B1E50063FE3E /* Main.storyboard */,
 				EF753FF52731B1E60063FE3E /* Assets.xcassets */,
 				EF753FF72731B1E60063FE3E /* LaunchScreen.storyboard */,
 				EF753FFA2731B1E60063FE3E /* Info.plist */,
@@ -153,6 +155,15 @@
 			path = MainCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		EF75401E2732DF880063FE3E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF753FF22731B1E50063FE3E /* Main.storyboard */,
+				EF75401F2732DF940063FE3E /* Map.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +226,7 @@
 				EF75401D2731C3210063FE3E /* myCell.xib in Resources */,
 				EF753FF62731B1E60063FE3E /* Assets.xcassets in Resources */,
 				EF753FF42731B1E50063FE3E /* Main.storyboard in Resources */,
+				EF7540202732DF940063FE3E /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
