@@ -23,11 +23,12 @@ class MainViewController: UIViewController {
             DispatchQueue.main.async {
                 self.myData = response.restaurants
                 self.collectionView.reloadData()
-                
-                self.title = "Lunch"
+                self.title = "Lunch Tyme"
                 setupCollectionView()
             }
+
     }
+
         func setupCollectionView() {
             collectionView.delegate = self
             collectionView.dataSource = self
@@ -59,6 +60,8 @@ extension MainViewController: UICollectionViewDataSource {
         restaurantItem.backgroundImageURL = "https" + restaurantItem.backgroundImageURL.dropFirst(4)
         cell.nameLabel.text = myData[indexPath.row].name
         cell.typeLabel.text = myData[indexPath.row].category
+        
+        cell.backgroundColor = .blue
         if let cachedImage = ImageCache.shared.read(imageStr: restaurantItem.backgroundImageURL) {
             cell.imageView.image = cachedImage
                 } else {
@@ -75,12 +78,13 @@ extension MainViewController: UICollectionViewDataSource {
 
                     }
                 }
+
         return cell
     }
 }
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 150)
+        return CGSize(width: collectionView.frame.width, height: 150)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         0
