@@ -68,14 +68,55 @@
         <!--Internet-->
         <scene sceneID="tJ4-Wa-VPd">
             <objects>
-                <viewController id="RWX-CS-PNU" sceneMemberID="viewController">
+                <viewController id="RWX-CS-PNU" customClass="InternetViewController" customModule="RestaurantProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fho-ri-W4Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWj-fF-3cH">
+                                <rect key="frame" x="0.0" y="44" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="RWX-CS-PNU" eventType="touchUpInside" id="EMB-TE-Vwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEa-F3-bC3">
+                                <rect key="frame" x="360" y="44" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="RWX-CS-PNU" eventType="touchUpInside" id="J4S-tj-4WY"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msx-XA-P0e">
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ufp-kU-gIx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KWj-fF-3cH" firstAttribute="top" secondItem="Ufp-kU-gIx" secondAttribute="top" id="2Xx-af-q9Q"/>
+                            <constraint firstItem="Ufp-kU-gIx" firstAttribute="trailing" secondItem="HEa-F3-bC3" secondAttribute="trailing" id="2Y9-P3-TGb"/>
+                            <constraint firstItem="Ufp-kU-gIx" firstAttribute="bottom" secondItem="Msx-XA-P0e" secondAttribute="bottom" id="43d-Ds-UfH"/>
+                            <constraint firstItem="Msx-XA-P0e" firstAttribute="leading" secondItem="Ufp-kU-gIx" secondAttribute="leading" id="82C-ju-7DR"/>
+                            <constraint firstItem="Ufp-kU-gIx" firstAttribute="trailing" secondItem="Msx-XA-P0e" secondAttribute="trailing" id="Hgn-3q-2WR"/>
+                            <constraint firstItem="Msx-XA-P0e" firstAttribute="top" secondItem="Ufp-kU-gIx" secondAttribute="top" constant="40" id="hyX-XJ-ftW"/>
+                            <constraint firstItem="KWj-fF-3cH" firstAttribute="leading" secondItem="Ufp-kU-gIx" secondAttribute="leading" id="qUg-s7-DPP"/>
+                            <constraint firstItem="HEa-F3-bC3" firstAttribute="top" secondItem="Ufp-kU-gIx" secondAttribute="top" id="vcU-uG-SJ9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Internet" id="xzE-tf-AL0"/>
+                    <connections>
+                        <outlet property="backButton" destination="KWj-fF-3cH" id="9X2-Tj-1jj"/>
+                        <outlet property="nextButton" destination="HEa-F3-bC3" id="17n-Hv-xFJ"/>
+                        <outlet property="webView" destination="Msx-XA-P0e" id="u1e-c9-h5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxe-Ic-RPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
