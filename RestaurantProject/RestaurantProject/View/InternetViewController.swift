@@ -7,9 +7,18 @@
 import UIKit
 import WebKit
 
-class InternetViewController: UIViewController, WKUIDelegate {
+class InternetViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     var webView: WKWebView!
     var delegate: MainViewControllerDelegate?
+    @IBAction func backButtonPressed(_ sender: Any) {
+        webView.goBack()
+    }
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        webView.reload()
+    }
+    @IBAction func forwardButtonPressed(_ sender: Any) {
+        webView.goForward()
+    }
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -22,4 +31,8 @@ class InternetViewController: UIViewController, WKUIDelegate {
         let myURL = URL(string:"https://www.bottlerocketstudios.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-    }}
+        webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
+    }
+}
+
