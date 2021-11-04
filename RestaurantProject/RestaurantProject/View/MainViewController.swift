@@ -32,7 +32,6 @@ class MainViewController: UIViewController {
         func setupCollectionView() {
             collectionView.delegate = self
             collectionView.dataSource = self
-//            collectionView.delegateFlowLayout = self
             let nib = UINib(nibName: "myCell", bundle: nil)
             self.collectionView.register(nib, forCellWithReuseIdentifier: "myCell")
     }
@@ -40,13 +39,10 @@ class MainViewController: UIViewController {
 }
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-            delegate?.goToMapVC()
-        }
-
-
-
+        delegate?.goToMapVC()
+    }
 }
+
 extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numRows
@@ -60,8 +56,6 @@ extension MainViewController: UICollectionViewDataSource {
         restaurantItem.backgroundImageURL = "https" + restaurantItem.backgroundImageURL.dropFirst(4)
         cell.nameLabel.text = myData[indexPath.row].name
         cell.typeLabel.text = myData[indexPath.row].category
-        
-        cell.backgroundColor = .blue
         if let cachedImage = ImageCache.shared.read(imageStr: restaurantItem.backgroundImageURL) {
             cell.imageView.image = cachedImage
                 } else {
@@ -75,10 +69,8 @@ extension MainViewController: UICollectionViewDataSource {
                             ImageCache.shared.runningTasks[currentRunningTask]?.cancel()
                             ImageCache.shared.runningTasks.removeValue(forKey: currentRunningTask)
                         }
-
                     }
                 }
-
         return cell
     }
 }
@@ -90,3 +82,4 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         0
     }
 }
+

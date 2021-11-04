@@ -3,12 +3,13 @@
 //  GroupProject
 //
 //  Created by Daniel Brannon on 11/2/21.
-//
+// https:.//www.bottlerocketstudios.com
 import UIKit
 import WebKit
+
 class InternetViewController: UIViewController, WKUIDelegate {
-    
     var webView: WKWebView!
+    var delegate: MainViewControllerDelegate?
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -18,7 +19,6 @@ class InternetViewController: UIViewController, WKUIDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let myURL = URL(string:"https://www.bottlerocketstudios.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
