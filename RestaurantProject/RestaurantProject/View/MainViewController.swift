@@ -15,10 +15,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var myData: [Restaurants] = []
     var viewModel = MainViewModel()
-    var delegate: MainViewControllerDelegate? = Coordinator()
+    var delegate = Coordinator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegate.navCon = navigationController!
         NetworkingRequest().fetch() { response in
             DispatchQueue.main.async {
                 self.myData = response.restaurants
@@ -39,7 +40,7 @@ class MainViewController: UIViewController {
 }
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.goToMapVC()
+        delegate.goToMapVC()
     }
 }
 

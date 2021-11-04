@@ -12,7 +12,7 @@ import MapKit
 class MapVC: UIViewController, UIPageViewControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var restaurantType: UILabel!
     @IBOutlet weak var streetName: UILabel!
     @IBOutlet weak var address2: UILabel!
@@ -24,7 +24,7 @@ class MapVC: UIViewController, UIPageViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let myRequest = URLRequest(url: URL(string: myUrl!)!)
+
         
     }
 }

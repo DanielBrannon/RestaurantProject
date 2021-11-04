@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cv7-g5-0Lo">
-                                <rect key="frame" x="0.0" y="44" width="414" height="288"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="645"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8N-J3-d6s">
-                                <rect key="frame" x="0.0" y="332" width="414" height="61"/>
+                                <rect key="frame" x="0.0" y="689" width="414" height="61"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJp-Dj-4ct">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGR-Rd-hhS">
                                         <rect key="frame" x="8" y="37" width="398" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ti-7N-cVC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3o-PK-zxK">
                                         <rect key="frame" x="8" y="8" width="398" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -37,17 +37,18 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.41431805668970362" green="0.67679503099205562" blue="0.52002196784896704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="QJp-Dj-4ct" secondAttribute="trailing" constant="8" id="Lig-Ci-oO3"/>
-                                    <constraint firstAttribute="bottom" secondItem="QJp-Dj-4ct" secondAttribute="bottom" constant="8" id="RIN-ak-mgp"/>
-                                    <constraint firstItem="9Ti-7N-cVC" firstAttribute="top" secondItem="H8N-J3-d6s" secondAttribute="top" constant="8" id="YAA-Zt-tq4"/>
-                                    <constraint firstItem="9Ti-7N-cVC" firstAttribute="leading" secondItem="H8N-J3-d6s" secondAttribute="leading" constant="8" id="dI4-1g-L3h"/>
-                                    <constraint firstAttribute="trailing" secondItem="9Ti-7N-cVC" secondAttribute="trailing" constant="8" id="hWG-R5-iwG"/>
-                                    <constraint firstItem="QJp-Dj-4ct" firstAttribute="top" secondItem="9Ti-7N-cVC" secondAttribute="bottom" constant="8" id="nzq-Gv-RKb"/>
-                                    <constraint firstItem="QJp-Dj-4ct" firstAttribute="leading" secondItem="H8N-J3-d6s" secondAttribute="leading" constant="8" id="z6Z-UF-pYN"/>
+                                    <constraint firstItem="gGR-Rd-hhS" firstAttribute="top" secondItem="h3o-PK-zxK" secondAttribute="bottom" constant="8" id="0kf-3f-SUG"/>
+                                    <constraint firstItem="h3o-PK-zxK" firstAttribute="top" secondItem="H8N-J3-d6s" secondAttribute="top" constant="8" id="HNI-F2-DP9"/>
+                                    <constraint firstItem="h3o-PK-zxK" firstAttribute="leading" secondItem="H8N-J3-d6s" secondAttribute="leading" constant="8" id="Hy3-Jy-ImD"/>
+                                    <constraint firstAttribute="trailing" secondItem="h3o-PK-zxK" secondAttribute="trailing" constant="8" id="alj-jj-6fk"/>
+                                    <constraint firstItem="gGR-Rd-hhS" firstAttribute="leading" secondItem="H8N-J3-d6s" secondAttribute="leading" constant="8" id="fhn-Gc-Erq"/>
+                                    <constraint firstAttribute="trailing" secondItem="gGR-Rd-hhS" secondAttribute="trailing" constant="8" id="iqO-0s-86N"/>
+                                    <constraint firstAttribute="bottom" secondItem="gGR-Rd-hhS" secondAttribute="bottom" constant="8" id="uGk-ox-W9L"/>
+                                    <constraint firstItem="gGR-Rd-hhS" firstAttribute="top" secondItem="h3o-PK-zxK" secondAttribute="bottom" constant="8" id="yja-ee-CGO"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jq1-29-8Jc">
-                                <rect key="frame" x="0.0" y="393" width="414" height="469"/>
+                                <rect key="frame" x="0.0" y="750" width="414" height="112"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-Yz-DHK">
                                         <rect key="frame" x="8" y="8" width="398" height="18"/>
@@ -77,7 +78,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="wVg-Yz-DHK" firstAttribute="top" secondItem="jq1-29-8Jc" secondAttribute="top" constant="8" id="0ZM-vI-zpt"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yyp-Kj-MqN" secondAttribute="bottom" constant="365" id="1km-TW-Ttf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yyp-Kj-MqN" secondAttribute="bottom" constant="8" id="1km-TW-Ttf"/>
                                     <constraint firstAttribute="trailing" secondItem="RUD-nu-DXh" secondAttribute="trailing" constant="8" id="50f-4J-nTr"/>
                                     <constraint firstItem="Yyp-Kj-MqN" firstAttribute="leading" secondItem="jq1-29-8Jc" secondAttribute="leading" constant="8" id="7W0-Zx-yJz"/>
                                     <constraint firstItem="oJv-WG-Gao" firstAttribute="top" secondItem="wVg-Yz-DHK" secondAttribute="bottom" constant="8" id="BzW-LK-LjW"/>
@@ -112,10 +113,10 @@
                     </view>
                     <connections>
                         <outlet property="address2" destination="oJv-WG-Gao" id="Ykw-IL-ryG"/>
-                        <outlet property="foodName" destination="9Ti-7N-cVC" id="c4P-po-iNN"/>
                         <outlet property="mapView" destination="Cv7-g5-0Lo" id="tHS-wD-mxx"/>
                         <outlet property="phone" destination="RUD-nu-DXh" id="thc-VP-yuZ"/>
-                        <outlet property="restaurantType" destination="QJp-Dj-4ct" id="ykz-Tc-X98"/>
+                        <outlet property="restaurantName" destination="h3o-PK-zxK" id="og3-0x-Oqj"/>
+                        <outlet property="restaurantType" destination="gGR-Rd-hhS" id="jBg-nf-6iE"/>
                         <outlet property="socialMedia" destination="Yyp-Kj-MqN" id="Bua-Wg-u73"/>
                         <outlet property="streetName" destination="wVg-Yz-DHK" id="Scp-Tf-52h"/>
                     </connections>
