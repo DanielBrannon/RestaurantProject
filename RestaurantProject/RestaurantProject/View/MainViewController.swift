@@ -7,7 +7,7 @@
 import UIKit
 
 protocol MainViewControllerDelegate {
-    func goToMapVC()
+    func goToMapVC(model: Restaurants)
 }
 
 class MainViewController: UIViewController {
@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
 }
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate.goToMapVC()
+        delegate.goToMapVC(model: myData[indexPath.row])
     }
 }
 

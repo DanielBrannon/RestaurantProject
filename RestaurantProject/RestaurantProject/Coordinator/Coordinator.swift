@@ -20,9 +20,11 @@ class Coordinator {
 extension Coordinator: MainViewControllerDelegate {
     
     
-    func goToMapVC() {
+    func goToMapVC(model: Restaurants) {
         
         let vc = UIStoryboard(name: "Map", bundle: nil).instantiateViewController(identifier: "MapVC") as! MapVC
+        print(model)
+        vc.restaurantDetails = model
         //vc.delegate = self
         navCon?.pushViewController(vc, animated: true)
     }
